@@ -1,24 +1,716 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B3m-MX-HLu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--周杰倫-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_0720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3od-kJ-N8g">
+                                <rect key="frame" x="0.0" y="151" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="as8-pZ-ADL">
+                                        <rect key="frame" x="0.0" y="0.0" width="800" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="杰倫3" translatesAutoresizingMaskIntoConstraints="NO" id="KmG-F2-dtd">
+                                                <rect key="frame" x="560" y="11" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="杰倫2" translatesAutoresizingMaskIntoConstraints="NO" id="gHv-je-SvF">
+                                                <rect key="frame" x="280" y="11" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="杰倫1" translatesAutoresizingMaskIntoConstraints="NO" id="hkx-6m-7OJ">
+                                                <rect key="frame" x="0.0" y="11" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="Igs-ik-H4v"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="92a-dZ-zcn"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ZoQ-12-kP0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="ContentSize">
+                                        <size key="value" width="800" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-Kp-cry">
+                                <rect key="frame" x="67" y="566" width="299" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="矮呦～不錯喔！">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="wTc-N6-zZE" kind="show" id="pRe-k4-QdY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="周杰倫" id="hZK-wD-aAP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="51.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JHT-V0-vVL">
+            <objects>
+                <viewController id="wTc-N6-zZE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEo-78-DwW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="杰倫3" translatesAutoresizingMaskIntoConstraints="NO" id="Nzn-QN-CGn">
+                                <rect key="frame" x="7" y="164" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="200"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="TPs-Se-hvz">
+                                <rect key="frame" x="7" y="597" width="401" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8LR-8V-X0W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XsS-Ul-LAa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg1-g2-Qd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="51.5625"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Egf-lb-275">
+            <objects>
+                <tableViewController id="JXi-KC-4Q4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="koV-7e-PDg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableFooterView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="華語專輯週榜" id="KZJ-BP-KaC">
+                            <rect key="frame" x="0.0" y="717" width="414" height="202"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <sections>
+                            <tableViewSection headerTitle="Section-1" id="Il9-2i-FVq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="0.0" rowHeight="130" id="bE0-Bx-FN7">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bE0-Bx-FN7" id="wN3-WQ-K2H">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="最偉大的作品" translatesAutoresizingMaskIntoConstraints="NO" id="1LZ-ya-8po">
+                                                    <rect key="frame" x="20" y="4" width="134" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最偉大的作品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80B-M0-vxb">
+                                                    <rect key="frame" x="222" y="11" width="140" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="周杰倫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADo-Fx-zzl">
+                                                    <rect key="frame" x="254" y="47" width="140" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="fdd-o3-5eN" kind="show" id="wDy-1H-AWF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="130" id="SSc-E1-fwO">
+                                        <rect key="frame" x="0.0" y="174.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SSc-E1-fwO" id="gtU-Hz-cHI">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="給" translatesAutoresizingMaskIntoConstraints="NO" id="woG-jD-kfO">
+                                                    <rect key="frame" x="20" y="8" width="134" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="給" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmk-JI-RLf">
+                                                    <rect key="frame" x="222" y="11" width="138" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="徐佳瑩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eet-df-egx">
+                                                    <rect key="frame" x="254" y="47" width="140" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="g9j-Ep-Oje" kind="show" id="YrF-G1-kes"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="130" id="dfw-n1-mEE">
+                                        <rect key="frame" x="0.0" y="304.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dfw-n1-mEE" id="yGU-Jl-6Pd">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="存在的力量" translatesAutoresizingMaskIntoConstraints="NO" id="3pJ-o3-ugV">
+                                                    <rect key="frame" x="20" y="11" width="134" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存在的力量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ym-7r-nK8">
+                                                    <rect key="frame" x="222" y="11" width="141" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="朱俐靜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooq-Tg-TtK">
+                                                    <rect key="frame" x="254" y="47" width="140" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="L4a-K9-4ns" kind="show" id="6xo-NH-Vyi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="130" id="HyW-2L-NZA">
+                                        <rect key="frame" x="0.0" y="434.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HyW-2L-NZA" id="zJx-5u-ReL">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="如果可以" translatesAutoresizingMaskIntoConstraints="NO" id="kvZ-od-vhF">
+                                                    <rect key="frame" x="20" y="9" width="134" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="如果可以" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzS-ZC-7Ty">
+                                                    <rect key="frame" x="208" y="14" width="166" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="韋禮安" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dh-u0-SpZ">
+                                                    <rect key="frame" x="254" y="50" width="140" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="zdZ-ya-e7d" kind="show" id="Kkj-Ci-RQ4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="130" id="4La-bw-k71">
+                                        <rect key="frame" x="0.0" y="564.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4La-bw-k71" id="W7N-28-em7">
+                                            <rect key="frame" x="0.0" y="0.0" width="385.5" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="運氣來得若有似無" translatesAutoresizingMaskIntoConstraints="NO" id="cQc-ZL-qOO">
+                                                    <rect key="frame" x="20" y="9" width="134" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="運氣來得若有似無" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3J-h8-cwg">
+                                                    <rect key="frame" x="198" y="14" width="211" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="告五人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCD-wu-j1k">
+                                                    <rect key="frame" x="254" y="50" width="140" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="NyK-kD-wl1" kind="show" id="vpu-YZ-hZ6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JXi-KC-4Q4" id="wz9-h8-VMl"/>
+                            <outlet property="delegate" destination="JXi-KC-4Q4" id="7o2-jD-8LM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6gl-uf-2Cg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6n-ZW-wWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="-668.30357142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lMC-Cv-beL">
+            <objects>
+                <viewController id="fdd-o3-5eN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wRm-gO-mVK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kf7-V3-ITe">
+                                <rect key="frame" x="0.0" y="108" width="427" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <string key="text">周杰倫化身時空旅人與藝術家們相遇 「最偉大的作品」MV飆狂想
+郎朗盛讚周杰倫作品具里程碑意義 入鏡演出MV也穿越時空？
+邀請小提琴家陳銳演奏悠揚旋律 曲風完美融合古典與流行
+7月8日新專輯「最偉大的作品」開始預購 7月15日正式發行
+
+睽違六年，樂壇天王周杰倫即將在7月15日推出他個人第15張專輯「最偉大的作品」，首波同名主打歌「最偉大的作品」MV今天中午12:00在周杰倫官方YouTube上線，一曝光即吸引全球樂迷目光！周杰倫發揮他天馬行空的狂想創意化身時空旅人，帶領樂迷穿梭時空回到1920年代，邂逅了許多藝術家，發生許多有趣的事。他更邀請國際鋼琴家郎朗入鏡演出，令MV增色不少！歌迷也跟著周杰倫的音樂展開了一趟時空之旅！
+
+周杰倫想透過音樂將繪畫、文學等藝術結合在一起，因此在MV裡呈現了許多周杰倫的狂想，他與友人在某個夜晚來到巴黎有著152年歷史的莎瑪麗丹(Samaritaine)百貨公司裡彈奏鋼琴，時空突然瞬移到1920年，遇到了馬格麗特、達利、常玉、莫內、徐志摩，周杰倫以魔術與藝術家們幽默互動，讓大師們有了新的創作靈感，世人熟知的作品包括瑪格麗特經典畫作中的青蘋果、達利著名的「軟鐘」、莫內知名的「睡蓮」系列，還有常玉筆下的花朵，這些偉大的藝術作品也流傳至今。親自執導MV的周杰倫，將腦中的奇思異想變成有趣的畫面，一起帶領歌迷進入探索藝術的奇妙旅程。</string>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eNf-7r-8La"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bmf-lV-23e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-4w-c4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="-668.30357142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x2P-QJ-57o">
+            <objects>
+                <viewController id="AfG-a5-jZn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3fz-Hr-clT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="速爆新歌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iet-II-vUj">
+                                <rect key="frame" x="46" y="61" width="315" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Zh-yF-wE8"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqI-uN-Bjr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46.376811594202906" y="-668.30357142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="95J-4y-Aka">
+            <objects>
+                <viewController id="ve3-ew-EO6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Clm-sx-Mbf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="杰倫2" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-2C-ZT7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRf-Iq-oj4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="JXi-KC-4Q4" kind="embed" id="DBt-cn-P3u"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6qO-rT-dA8"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L99-R0-URN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsU-Wl-tDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="782.8125"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cM2-Kw-6tZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="B3m-MX-HLu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48f-Pp-xT6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="selectionIndicatorTintColor" name="AccentColor"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ES3-zc-bDK" kind="relationship" relationship="viewControllers" id="69m-Il-WBR"/>
+                        <segue destination="aEi-er-foG" kind="relationship" relationship="viewControllers" id="abv-tB-0D1"/>
+                        <segue destination="Ldh-ay-72L" kind="relationship" relationship="viewControllers" id="IWK-sd-ov2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UyL-nV-0HC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="51.5625"/>
+        </scene>
+        <!--Top-->
+        <scene sceneID="KCa-Ei-eSB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aEi-er-foG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top" image="star.circle" catalog="system" id="yJT-LQ-LVE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fys-Zx-oV8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ve3-ew-EO6" kind="relationship" relationship="rootViewController" id="zVR-Sg-sk9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpw-dG-2vz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="784"/>
+        </scene>
+        <!--favorite-->
+        <scene sceneID="nrX-Tl-WsP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ES3-zc-bDK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="favorite" image="heart.rectangle.fill" catalog="system" selectedImage="heart.circle.fill" id="hp6-bx-AYe">
+                        <color key="badgeColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sds-In-wu2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QMf-X8-CdH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJU-Zg-XWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="52"/>
+        </scene>
+        <!--Album-->
+        <scene sceneID="hwq-Bi-YCs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ldh-ay-72L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Album" image="play.rectangle.fill" catalog="system" id="lQe-2q-YOe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jEw-mQ-qsY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JXi-KC-4Q4" kind="relationship" relationship="rootViewController" id="CL8-vt-NgR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvr-1f-L7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="-668.30357142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1hJ-o3-ecK">
+            <objects>
+                <viewController id="g9j-Ep-Oje" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G9U-8A-ecN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VPZ-wT-EQf">
+                                <rect key="frame" x="0.0" y="86" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.23522989639383279" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">●音樂玩家的成形 源自被給予的人
+徐佳瑩所經歷的音樂年代，像母體一般的存在，給予她的創作，源源不絕的養分，她也將她的音樂給予了我們，在吸收養分後的產出，交會出LaLa的音樂世界，音樂玩家徐佳瑩四年之中正式成形，玩出一張「被給予」和「能給予」的專輯。
+「本能和直覺地創作音樂，想做自己有感覺的音樂，才是能持續帶給我快樂和養分的事。」LaLa 在回顧專輯創作的過程說著，以現階段希望將力氣用於生活的 LaLa，也不難在專輯中看見她的「直接」、「簡單」。
+
+●玩家進入 自我的音樂競技●音樂玩家的成形 源自被給予的人
+徐佳瑩所經歷的音樂年代，像母體一般的存在，給予她的創作，源源不絕的養分，她也將她的音樂給予了我們，在吸收養分後的產出，交會出LaLa的音樂世界，音樂玩家徐佳瑩四年之中正式成形，玩出一張「被給予」和「能給予」的專輯。
+「本能和直覺地創作音樂，想做自己有感覺的音樂，才是能持續帶給我快樂和養分的事。」LaLa 在回顧專輯創作的過程說著，以現階段希望將力氣用於生活的 LaLa，也不難在專輯中看見她的「直接」、「簡單」。
+
+●玩家進入 自我的音樂競技場
+2022 年全新專輯，將徐佳瑩最具個人特色的創作極大化，從滋養她音樂生命的80、90、00年代流行文化為觸發點，以La式創作的旋律與歌唱，把華語流行巧妙融合多樣曲風，是一張帶有復古色彩、娛樂性、時代氛圍集大成的一張專輯。此張專輯更顯化 LaLa 為唱作俱佳的音樂人外，也更確立擔任製作人身份的能力，繼金曲歌后、金曲專輯後的 LaLa，向大眾揭開自己的全新創作、身份、歌唱能力以及表演能力皆「升級」，除了原本創作歌手的身份外，再擔下專輯製作人的重擔，挑戰自己，更在乎及呵護自己的作品和音樂品質，展現過人的才氣和能力，成為能夠超越自己的金曲歌后。此外，這張專輯同步為LaLa 對自己歌手回憶錄的對話，創作層面上嘗試各式新的曲風，站上超越自己以往的音樂創作、娛樂表現的競技場。
+
+●靈肉合一創作「瑩」 徐佳瑩x葛大為x陳君豪
+《給》這張專輯以共同創作的方式進行，由LaLa、陳君豪、葛大為，彼此皆為熟悉的創作夥伴一起攜手完成，三人也常在錄音室裡聊到，專輯是用「創作『瑩』」的方式完成的，LaLa 在回顧專輯製作過程時說:「我覺得我們三個人的靈魂是合在一起的，每首歌都有彼此的血肉。」而製作人陳君豪笑稱製作過程:「其實這張專輯是 『聊』出來的，我們花了很多時間，在閒聊中找到靈感。」專輯主要的創作觸發點，源自於七年級生所經歷的音樂年代，創作時緊扣著流行音樂的各種面貌，用現代的方式，將華語流行音樂文化再呈現，製作人陳君豪說：「生產必須吸收養分，這張專輯，就是要讓大家聽到這個過程。」
+《給》是徐佳瑩、葛大為、陳君豪共同產出的音樂作品，不想說任何大道理，不想強制傳遞概念與立場，從經典流行樂的母體開始，將產出新音樂的過程完整收錄，是一張過癮又純粹，質量飽滿的創作專輯。
+</string>
+                                <color key="textColor" red="0.28763989008945678" green="0.30003513823916778" blue="0.58859376233033456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4gH-ki-COy"/>
+                        <color key="backgroundColor" red="0.93351858854293823" green="0.89530843496322632" blue="0.16330191493034363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uz4-Gi-6aV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0j-Ih-Ar2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3424.6376811594205" y="-899.33035714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZZo-Ni-Ch8">
+            <objects>
+                <viewController id="L4a-K9-4ns" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Cc-hu-Rdb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="haK-bR-g4o">
+                                <rect key="frame" x="0.0" y="86" width="414" height="727"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">如謬斯般降臨 浴火中重生
+她是女神MIU—朱俐靜
+她逆光前行
+她點亮世界
+她用純淨自然如天籟一樣的歌唱 反抗世界的塵囂喧擾
+她走入人間無拘無束地存在 展現無比的勇氣和力量
+
+「請相信許願的力量，就會找到夢想的光芒」。
+
+許願讓希望萌芽
+加上意志力的灌溉
+夢想就會越來越靠近
+
+工作、學業、愛情、家庭、健康，
+存在就是完美
+一切都會被實現
+Make a Wish, Life will Change.
+女神獻聲 天地動容
+
+在歷經了無數的考驗和漫長的時間等待，她用天賦，回到了上天的擁抱。
+音符讓人微笑，舞蹈讓人傾心，像是掌管歌聲的歐特碧，受諸人眷顧的謬思女神，
+藉著音樂渲染繽紛地顏色給世界大地，製造更多溫暖的希望和無限的可能。
+十首動聽金曲好似稜鏡，映射出朱俐靜不同的情緒
+甜蜜、憤怒、獨立、純粹、抒發、安慰
+那是她想說的話，也是她想唱的歌
+
+這張專輯是朱俐靜經歷無數挑戰努力而來的，從PUB駐唱到參加歌唱比賽得到冠軍，甚至在錄專輯的同時代表台灣到北京參加中央電視台「我要上春晚」的比賽，她都是努力把握每個機會，儘管40小時無法休息，她還是用盡所有的正面能量努力往前衝，也因為如此，她在錄專輯第一首歌「相愛的模樣」的那一夜，寫出了她的第一首創作歌曲：【存在的力量】這是她面對自己這些年來對音樂的堅持及表演的熱愛有感而發的一首歌，自己用手機把Demo做出來，新人教父-李亞明同時也是唱片公司老闆的他，一聽到Demo馬上就決定將這首歌做為朱俐靜首張個人專輯的主要精神與概念，當然整張專輯曲風的豐富更不在話下，朱俐靜除了寫了「存在的力量」外還寫了一首曲風有別於一般流行歌曲的「愧」，這首歌很有歌舞劇的張力，是一首非常有風格的歌。朱俐靜的歌聲是被所有評審一致讚譽非常會唱的唱將，所以專輯中也收錄了由「隱形的翅膀」作者王雅君為朱俐靜量身打造挑戰極高音的「一千萬次的淚水」和極富視覺性感的「女神」，當然還表達女生對愛情甜美的「相愛的模樣」、「KISS ME」…。</string>
+                                <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kxB-5A-Bgz"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H1u-nj-zGz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgc-et-gAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="-1363.3928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E1M-Om-eaL">
+            <objects>
+                <viewController id="zdZ-ya-e7d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mSy-RG-FUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bHL-xn-UlH">
+                                <rect key="frame" x="0.0" y="106" width="414" height="727"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <string key="text">入圍金馬獎「最佳原創電影歌曲」
+金曲創作才子 韋禮安
+命定音緣獻唱之作
+
+「如果可以」
+
+九把刀最新電影「月老」主題曲
+柯震東 × 宋芸樺 × 王淨 × 馬志翔
+打造陰陽兩界奇幻大作
+最強組合主演
+
+
+歌曲未上架即入圍第58屆金馬獎
+「最佳原創電影歌曲」等11項大獎提名
+
+金曲創作才子韋禮安，在影視音樂合作上不斷創作佳績與口碑，繼火神的眼淚主題曲「因為是你」，再度與影視電影合作，為九把刀最新愛情奇幻電影《月老》，量身打造主題曲「如果可以」，而電影《月老》橫掃（第58屆）金馬獎入圍十一項大獎，其中主題曲「如果可以」在歌曲未上架的狀況下即入圍第58屆金馬獎「最佳原創電影歌曲」，令人更期待歌曲在電影中畫龍點睛的效應，勢必造成「那些年一起追的女孩」以主題曲「那些年」席捲獎項與串流平台排行榜炫風！
+
+九把刀最新愛情奇幻電影《月老》入圍最佳劇情片、最佳男配角、最佳改編劇本、最佳攝影、最佳視覺效果、最佳美術設計、最佳造型設計、最佳動作設計、最佳原創電影音樂、最佳原創電影歌曲、最佳音效等11項大獎提名，再加上三位男女主角柯震東、宋芸樺與王淨以及入圍最佳男配角獎的馬志翔首度合作，《月老》絕對今年最受矚目的國片鉅作。
+首非常有風格的歌。朱俐靜的歌聲是被所有評審一致讚譽非常會唱的唱將，所以專輯中也收錄了由「隱形的翅膀」作者王雅君為朱俐靜量身打造挑戰極高音的「一千萬次的淚水」和極富視覺性感的「女神」，當然還表達女生對愛情甜美的「相愛的模樣」、「KISS ME」…。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XhM-ie-qfQ"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z8A-Ye-2rp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MA-KV-Fai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3424.6376811594205" y="-1639.2857142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MZm-5b-i30">
+            <objects>
+                <viewController id="NyK-kD-wl1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GRR-t2-zzs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E8D-tp-Clv">
+                                <rect key="frame" x="0.0" y="86" width="414" height="776"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <string key="text">一個宜蘭出生的樂團，一張宜蘭誕生的專輯
+把錄音室搬回故鄉民宿，倒帶回歸盤帶錄音
+
+從Digital 數位時代回歸不失真analog類比錄音
+讓自己回歸初心，把自己整個交給安全感
+
+陳君豪、韓立康、黃文萱
+金曲製作團隊操刀 一起玩音樂！
+
+12月31日，告五人2.0來的舉重若輕
+第二張專輯《運氣來得若有似無》
+
+來自宜蘭的告五人，是以雙主唱犬青、雲安，以及鼓手謙哥為核心的搖滾樂團。他們曾多次獲音樂獎項入圍肯定，並拿下第 9 屆金音獎「最佳新人」與第 31 屆金曲獎「最佳音樂錄影帶」的殊榮。
+
+以〈你要不要吃哈密瓜〉與〈披星戴月的想你〉在StreetVoice、YouTube 平台發跡，告五人於 2017 年後，陸續發行 EP《迷霧之子》與首張專輯《我肯定在幾百年前就說過愛你》。他們擅將動聽的華語流行詞曲，與歐美的類型音樂、當代聲響結合，加上犬青與雲安輕重互補的男女雙聲，成功吸引大量年輕歌迷，締造多首百萬點聽單曲。
+
+近兩年，告五人不僅唱遍各大音樂節、更完售台灣中大型的live house，可說是新世代樂團裡，人氣名列前茅的一組。2020 年，告五人在第二張專輯《運氣來得若有似無》中持續挑戰自我，脫離常規的錄音室，搬回宜蘭包棟民宿錄音。性情坦率的三人組，甩掉拘束更自在唱著搖滾樂的率性節奏與微醺的醉人詩篇，他們常喊說「要唱到歌迷結婚生子」，用音樂持續燃燒青春的起承轉合與人間的春夏秋冬。
+
+
+不只是一張專輯，更是迷因世代的聽覺聖經
+拒絕成為世故麻木的大人，我們都要不斷回望內在初心
+至今最舒適的錄音過程，激起最告五人Style的音樂能量
+
+即使曾被背叛，也依然相信人性與愛。
+勇闖陌生所在，我們一起尋找安全感。</string>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RMf-VR-Dqv"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NVN-45-T5P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUL-ui-9Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4179.7101449275369" y="-1293.0803571428571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DBt-cn-P3u"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="heart.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="star.circle" catalog="system" width="128" height="121"/>
+        <image name="如果可以" width="1280" height="720"/>
+        <image name="存在的力量" width="1000" height="1000"/>
+        <image name="最偉大的作品" width="1280" height="720"/>
+        <image name="杰倫1" width="2560" height="3840"/>
+        <image name="杰倫2" width="900" height="900"/>
+        <image name="杰倫3" width="500" height="500"/>
+        <image name="給" width="1050" height="1050"/>
+        <image name="華語專輯週榜" width="306" height="164"/>
+        <image name="運氣來得若有似無" width="1280" height="720"/>
+        <namedColor name="AccentColor">
+            <color red="0.61100000143051147" green="0.59200000762939453" blue="0.22800000011920929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
